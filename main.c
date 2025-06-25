@@ -16,15 +16,19 @@ int main(){
 	printf("ESCOLHA UM OPERADOR: \n");
 	scanf("%d", &operador);
 	printf("\n");
-	
-	if(operador<1 || operador>4){
-		printf("OPCAO INVALIDA");
-		return 0;
+	//NOVO	
+	while(operador<1 || operador>4){
+		printf("OPCAO INVALIDA, TENTE NOVAMENTE: \n");
+		scanf("%d", &operador);
 	}
+	//ANTIGO
+	//if(operador<1 || operador>4){
+	//	printf("OPCAO INVALIDA");
+	//	return 0;
+	//}
 	
 	printf("PRIMEIRO NUMERO: ");
 	scanf("%d", &n1);
-	printf("\n");
 	printf("SEGUNDO NUMERO: ");
 	scanf("%d", &n2);
 	
